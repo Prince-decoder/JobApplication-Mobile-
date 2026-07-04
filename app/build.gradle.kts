@@ -38,6 +38,14 @@ android {
 }
 
 dependencies {
+
+    implementation(libs.androidx.compose.material.icons.extended.android)
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.converter.gson)
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)
