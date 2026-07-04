@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+        Allows cleartext (HTTP) traffic to the Android emulator's host machine.
+        10.0.2.2 is the special alias that the Android emulator uses to reach
+        the development machine's localhost (e.g. your Spring Boot server on port 8080).
+        This config is safe for development; remove or restrict for production builds.
+    -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>
